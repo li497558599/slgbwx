@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<title>{dede:field.title /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description'/}">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="applicable-device" content="pc,mobile" />
+<link href="/templets/default/css/idangerous.swiper.css" type="text/css" rel="stylesheet"/>
+<link href="/templets/default/css/js.css" type="text/css" rel="stylesheet"/>
+<link href="/templets/default/css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 头部head-->
+{dede:include filename="head.htm"/}
+<!-- 头部head-->
+<div class="psl6-b phone1">
+<span>{dede:field name='typename'/}</span><a href="http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT41686027&lng=cn" target="_blank" rel="nofollow">在线咨询+</a>
+</div>
+
+<div class="sl6-k">
+<!-- 左侧left开始-->
+{dede:include filename="left.htm"/}
+
+<!-- 左侧left结束-->
+<div class="sl6-kb">
+<div class="sl6-kb-a pc1"><span>{dede:field name='typename'/}</span> 当前位置： <a href="http://www.slgbwx.com/">嵩山少林寺武术学校</a>> <a href="http://www.slgbwx.com/guanxin.html">家长关心的问题</a>></div>
+<div class="sl6-kb-b">
+
+<h2>{dede:field.title/}</h2>
+<p class="art_sm">发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}      来源：{dede:field.source/}  点击量：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></p>
+<p>
+{dede:field.body/}
+</p>
+
+<div class="wztj">
+       <p>{dede:prenext get='pre'/}</p>
+       <p>{dede:prenext get='next'/} </p>
+      </div>
+
+<br/>
+<p><a href="#"><img src="/templets/default/images/p09.jpg"></a></p>
+</div>
+{dede:include filename="bottom.htm"/}
+</div>
+<div class="clear"></div>
+</div>
+
+<!--尾部footer开始-->
+{dede:include filename="footer.htm"/}
+
+<!-- 尾部footer结束-->
+
+</body>
+</html>
